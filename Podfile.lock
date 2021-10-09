@@ -1,5 +1,4 @@
 PODS:
-  - ApphudSDK (1.0.4)
   - Realm (5.3.6):
     - Realm/Headers (= 5.3.6)
   - Realm/Headers (5.3.6)
@@ -7,20 +6,17 @@ PODS:
     - Realm (= 5.3.6)
 
 DEPENDENCIES:
-  - ApphudSDK
   - RealmSwift
 
 SPEC REPOS:
   trunk:
-    - ApphudSDK
     - Realm
     - RealmSwift
 
 SPEC CHECKSUMS:
-  ApphudSDK: 761743c1f6699653ca29990ef920ac9aa050cac3
   Realm: cd400dd7e5b5bb5c8ae9842eecd73792369e6ec0
   RealmSwift: 99a16dbdee5d6dfb3d91d56088a9f8c15c0871d1
 
-PODFILE CHECKSUM: 872a664afd14d428b6528f4b3be29f1c7cfe9607
+PODFILE CHECKSUM: 966cb7320fed55d60f8620840a5fa71cd2c6f7b4
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.11.2

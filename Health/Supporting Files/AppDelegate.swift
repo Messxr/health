@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import ApphudSDK
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -18,6 +17,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 //        let window = UIWindow(frame: UIScreen.main.bounds)
+        
+        if #available(iOS 15, *) {
+            let appearance = UITabBarAppearance()
+            let navigationBar = UITabBar()
+            appearance.configureWithOpaqueBackground()
+            navigationBar.standardAppearance = appearance
+            UITabBar.appearance().scrollEdgeAppearance = appearance
+        }
                 
         self.window?.rootViewController = casualRootVC()
         return true

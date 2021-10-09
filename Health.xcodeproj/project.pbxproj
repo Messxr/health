@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3802518F25D38E4A00140EE8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3802518E25D38E4A00140EE8 /* TableViewCell.swift */; };
-		38071B6AB516725545DAF331 /* Pods_Health.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6496F7FF41AE0DE03D16FA06 /* Pods_Health.framework */; };
 		386D37D225CB77A40082E480 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386D37D125CB77A40082E480 /* Note.swift */; };
 		386D37F025CB81160082E480 /* WellBeingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 386D37EF25CB81160082E480 /* WellBeingViewController.swift */; };
 		386D380125CBA24C0082E480 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 386D380025CBA24C0082E480 /* Assets.xcassets */; };
@@ -21,7 +20,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		094B411360215E4CC826CCC3 /* Pods-Health.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Health.release.xcconfig"; path = "Target Support Files/Pods-Health/Pods-Health.release.xcconfig"; sourceTree = "<group>"; };
 		3802518E25D38E4A00140EE8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		386D37D125CB77A40082E480 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		386D37E225CB7C300082E480 /* RealmSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,8 +34,6 @@
 		3877C97025C8C1DC00CB1035 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3877C97F25C8C2A700CB1035 /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 		3877C98225C8C2E000CB1035 /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
-		6496F7FF41AE0DE03D16FA06 /* Pods_Health.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Health.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7CB2DDE7145310DE9DB9422B /* Pods-Health.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Health.debug.xcconfig"; path = "Target Support Files/Pods-Health/Pods-Health.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +41,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38071B6AB516725545DAF331 /* Pods_Health.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,7 +120,6 @@
 			children = (
 				386D37E625CB7C370082E480 /* Realm.framework */,
 				386D37E225CB7C300082E480 /* RealmSwift.framework */,
-				6496F7FF41AE0DE03D16FA06 /* Pods_Health.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -133,8 +127,6 @@
 		D23E8A5E508B1195599476A7 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				7CB2DDE7145310DE9DB9422B /* Pods-Health.debug.xcconfig */,
-				094B411360215E4CC826CCC3 /* Pods-Health.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -146,11 +138,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3877C97325C8C1DC00CB1035 /* Build configuration list for PBXNativeTarget "Health" */;
 			buildPhases = (
-				CD659D7DE0E67D36F86531C3 /* [CP] Check Pods Manifest.lock */,
 				3877C95B25C8C1DB00CB1035 /* Sources */,
 				3877C95C25C8C1DB00CB1035 /* Frameworks */,
 				3877C95D25C8C1DB00CB1035 /* Resources */,
-				D5770062C58977A6622BCF65 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -205,48 +195,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		CD659D7DE0E67D36F86531C3 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Health-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D5770062C58977A6622BCF65 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Health/Pods-Health-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Health/Pods-Health-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Health/Pods-Health-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3877C95B25C8C1DB00CB1035 /* Sources */ = {
@@ -336,7 +284,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -391,7 +339,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -403,13 +351,12 @@
 		};
 		3877C97425C8C1DC00CB1035 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7CB2DDE7145310DE9DB9422B /* Pods-Health.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Health/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -423,13 +370,12 @@
 		};
 		3877C97525C8C1DC00CB1035 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 094B411360215E4CC826CCC3 /* Pods-Health.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Health/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
